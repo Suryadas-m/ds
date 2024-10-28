@@ -76,6 +76,8 @@ for(i = 0; i < size;i++){
 printf("%d ",bit_array1[i]);
 }
 
+printf("\n");	
+
 printf("elements of 2nd bitarray :"); 
 for(i = 0; i < size;i++){
 printf("%d ",bit_array2[i]);
@@ -83,21 +85,24 @@ printf("%d ",bit_array2[i]);
 
 //OR
 for(i=0;i<size;i++){
-arr_OR[i] = bit_array1[i] + bit_array1[i];
+arr_OR[i] = bit_array1[i] | bit_array2[i];
 }
 //AND
 for(i=0;i<size;i++){
-arr_AND[i] = bit_array1[i] * bit_array1[i];
+arr_AND[i] = bit_array1[i] & bit_array2[i];
 }
+
+printf("\n");
 
 printf("Result Of OR :"); 
 for(i = 0; i < size;i++){
 printf("%d",arr_OR[i]);
 }
 
+printf("\n");
+
 printf("Result Of AND :"); 
 for(i = 0; i < size;i++){
 printf("%d",arr_AND[i]);
 }
 }
-
